@@ -22,9 +22,9 @@ const header = new Header({ children: [
       new TableCell({ width: { size: 5106, type: WidthType.DXA }, borders: noBorders, verticalAlign: VerticalAlign.CENTER, children: [
         P([r('بنفيت للسفر والطيران', { bold: true, size: 32 })]),
         P([en('BENEFIT TRAVEL & AVIATION CO.', { size: 16, bold: true, characterSpacing: 30, color: GOLD })], { bidirectional: false, alignment: AlignmentType.RIGHT, spacing: { before: 80, after: 60 } }),
-        P([r('سجل تجاري: ', { size: 16, bold: true }), en('0000000000', { size: 16 }),
+        P([r('سجل تجاري: ', { size: 16, bold: true }), en('1176591', { size: 16 }),
            r('   |   ', { size: 16, color: GOLD }),
-           r('الرقم الضريبي: ', { size: 16, bold: true }), en('000000000000000', { size: 16 })]),
+           r('الخرطوم – العمارات، السودان', { size: 16 })]),
       ]}),
       new TableCell({ width: { size: 4800, type: WidthType.DXA }, borders: noBorders, verticalAlign: VerticalAlign.CENTER, children: [
         new Paragraph({ bidirectional: true, alignment: AlignmentType.END, children: [ new ImageRun({ type: 'png', data: LOGO, transformation: { width: 230, height: 61 },
@@ -47,9 +47,9 @@ const footer = new Footer({ children: [
   new Paragraph({ spacing: { before: 0, after: 0, line: 40, lineRule: 'exact' }, border: { top: { style: BorderStyle.SINGLE, size: 6, color: GOLD, space: 1 } }, children: [] }),
   new Table({ width: { size: W, type: WidthType.DXA }, columnWidths: fw, borders: noBorders, visuallyRightToLeft: true, layout: TableLayoutType.FIXED,
     rows: [ new TableRow({ children: [
-      fcol('العنوان', ['[المدينة – الحي – الشارع]', ['ص.ب / الرمز البريدي: ', '00000 – 00000']], fw[0]),
-      fcol('التواصل', [['هاتف: ', '+000 00 000 0000'], ['جوال: ', '+000 00 000 0000']], fw[1]),
-      fcol('البريد والموقع', [['', 'info@yourdomain.com'], ['', 'www.yourdomain.com']], fw[2]),
+      fcol('العنوان', ['الخرطوم – العمارات', ['', 'Al-Amarat, Khartoum, Sudan']], fw[0]),
+      fcol('التواصل', [['هاتف: ', '+249 912 337 952'], ['', '0912337952']], fw[1]),
+      fcol('السجل التجاري', [['', '1176591'], ['', 'C.R. No. 1176591']], fw[2]),
     ]})] }),
   new Paragraph({ bidirectional: true, alignment: AlignmentType.CENTER, spacing: { before: 100, after: 0 },
     shading: { type: ShadingType.CLEAR, fill: NAVY, color: 'auto' },

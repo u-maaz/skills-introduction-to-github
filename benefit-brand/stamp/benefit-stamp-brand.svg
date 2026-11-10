@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <path id="topb" d="M 50,200 A 150,150 0 0 1 350,200"/>
+    <path id="botb" d="M 36,200 A 164,164 0 0 0 364,200"/>
+  </defs>
+  <circle cx="200" cy="200" r="192" fill="none" stroke="#0B2A4A" stroke-width="7"/>
+  <circle cx="200" cy="200" r="181" fill="none" stroke="#0B2A4A" stroke-width="1.6"/>
+  <circle cx="200" cy="200" r="124" fill="none" stroke="#0B2A4A" stroke-width="1.6"/>
+  <circle cx="200" cy="200" r="118" fill="none" stroke="#C9A14A" stroke-width="3.5" stroke-dasharray="1 7" stroke-linecap="round"/>
+  <text font-family="Cairo" font-weight="800" font-size="30" fill="#0B2A4A"><textPath href="#topb" startOffset="50%" text-anchor="middle">بنفيت للسفر والطيران</textPath></text>
+  <text font-family="Montserrat" font-weight="700" font-size="18.5" letter-spacing="3.2" fill="#0B2A4A"><textPath href="#botb" startOffset="50%" text-anchor="middle">BENEFIT TRAVEL &amp; AVIATION</textPath></text>
+  <path d="M36,193 L38,198 L43,200 L38,202 L36,207 L34,202 L29,200 L34,198 Z" fill="#C9A14A"/><path d="M364,193 L366,198 L371,200 L366,202 L364,207 L362,202 L357,200 L362,198 Z" fill="#C9A14A"/>
+  <g transform="translate(142,104) scale(0.58)">
+  <defs><mask id="mstb" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
+    <rect width="200" height="200" fill="#fff"/>
+    <path d="M18,146 Q92,206 160,70 Q96,186 18,146 Z" fill="#000" stroke="#000" stroke-width="9" stroke-linejoin="round"/>
+  </mask></defs>
+  <g mask="url(#mstb)" fill="none" stroke="#0B2A4A" stroke-width="21" stroke-linejoin="miter">
+    <path d="M62,34 V166"/>
+    <path d="M52,44.5 H104 A24.5,24.5 0 0 1 104,93.5 H62"/>
+    <path d="M62,93.5 H110 A31,31 0 0 1 110,155.5 H52"/>
+  </g>
+  <path d="M18,146 Q92,206 160,70 Q96,186 18,146 Z" fill="#C9A14A"/>
+  <path d="M15,0 C15,-2 12,-2.6 10,-2.6 L3,-2.6 L-5,-14 L-9.5,-14 L-4.5,-2.6 L-11,-2.6 L-14.5,-7.5 L-17.5,-7.5 L-15.5,0 L-17.5,7.5 L-14.5,7.5 L-11,2.6 L-4.5,2.6 L-9.5,14 L-5,14 L3,2.6 L10,2.6 C12,2.6 15,2 15,0 Z" fill="#C9A14A" transform="translate(171,49) rotate(-58) scale(1.15)"/></g>
+  <rect x="146" y="232" width="108" height="1.6" fill="#C9A14A"/>
+  <text x="200" y="262" text-anchor="middle" font-family="Cairo" font-weight="700" font-size="21" fill="#0B2A4A">س.ت: 1176591</text>
+  <text x="200" y="290" text-anchor="middle" font-family="Cairo" font-weight="700" font-size="17" fill="#C9A14A">الخرطوم – السودان</text>
+</svg>

@@ -26,6 +26,8 @@ const stacked = (n=NAVY,g=GOLD)=>`<svg xmlns="http://www.w3.org/2000/svg" viewBo
   const jobs = {
     'benefit-icon': icon(), 'benefit-logo-horizontal': horiz(), 'benefit-logo-stacked': stacked(),
     'benefit-logo-horizontal-white': horiz('#FFFFFF', GOLD),
+    'benefit-icon-white': icon('#FFFFFF', GOLD), 'benefit-logo-stacked-white': stacked('#FFFFFF', GOLD),
+    'benefit-logo-header-white': horiz('#FFFFFF', GOLD).replace('viewBox="0 0 600 200" width="1800" height="600"','viewBox="4 26 586 156" width="1758" height="468"').replace(/<text x="214" y="182"[^]*?<\/text>/,''),
     'benefit-logo-header': horiz().replace('viewBox="0 0 600 200" width="1800" height="600"','viewBox="4 26 586 156" width="1758" height="468"').replace(/<text x="214" y="182"[^]*?<\/text>/,''),
   };
   for (const [name, svg] of Object.entries(jobs)) {
