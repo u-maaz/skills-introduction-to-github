@@ -5,8 +5,8 @@ const INFO = { phoneIntl: '+249 912 337 952', phoneLocal: '0912337952', addrAr: 
 const A = f => `../assets/${f}`;
 const base = `<meta charset="utf-8"><style>
 *{box-sizing:border-box;margin:0;padding:0} html,body{overflow:hidden} :root{--navy:${NAVY};--gold:${GOLD}}
-body{font-family:Cairo,Arial,sans-serif;color:var(--navy);-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.en{font-family:Montserrat,Arial,sans-serif} .ltr{direction:ltr;unicode-bidi:isolate}
+body{font-family:Rubik,Arial,sans-serif;color:var(--navy);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.en{font-family:Rubik,Arial,sans-serif} .ltr{direction:ltr;unicode-bidi:isolate}
 </style>`;
 const ico = {
   phone: c => `<svg viewBox="0 0 24 24" width="100%" height="100%"><path fill="${c}" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg>`,
@@ -26,7 +26,7 @@ const card = `<!doctype html><html dir="rtl">${base}<style>
 .rule{width:12mm;height:.5mm;background:var(--gold);margin:3mm 0 3mm}
 .row{display:flex;align-items:center;gap:2.2mm;font-size:7.3pt;font-weight:600;line-height:1.25;margin-bottom:1.5mm}
 .row i{width:3.6mm;height:3.6mm;flex:none;display:block;background:var(--navy);border-radius:50%;padding:.75mm}
-.row small{font-family:Montserrat;font-size:5.8pt;font-weight:500;display:block}
+.row small{font-family:Rubik;font-size:5.8pt;font-weight:500;display:block}
 .back .foot{position:absolute;bottom:0;left:0;right:0;height:5.5mm;background:var(--navy);display:flex;align-items:center;justify-content:center;gap:2mm;color:#fff;font-size:6pt;font-weight:700}
 .back .foot b{color:var(--gold)}
 </style><body>
@@ -65,13 +65,13 @@ const cover = `<!doctype html><html dir="rtl">${base}<style>body{width:1640px;he
 .logo{position:absolute;right:120px;top:150px;width:760px}
 .big{position:absolute;left:-60px;top:-120px;width:820px;opacity:.07}
 .info{position:absolute;left:120px;top:210px;color:#fff;font-size:30px;font-weight:700;line-height:2.1}
-.info b{color:var(--gold);font-family:Montserrat;letter-spacing:2px}
+.info b{color:var(--gold);font-family:Rubik;letter-spacing:2px}
 .bar{position:absolute;bottom:0;left:0;right:0;height:14px;background:var(--gold)}
 </style><body><img class="big" src="${A('benefit-icon-white.png')}"><img class="logo" src="${A('benefit-logo-horizontal-white.png')}">
 <div class="info"><div><b class="ltr">${INFO.phoneIntl}</b></div><div>${INFO.addrAr}</div></div><div class="bar"></div></body></html>`;
 const post = `<!doctype html><html dir="rtl">${base}<style>body{width:1080px;height:1080px;overflow:hidden;background:#fff;position:relative;overflow:hidden}
 .top{position:absolute;top:0;left:0;right:0;height:120px;background:var(--navy);display:flex;align-items:center;justify-content:space-between;padding:0 60px}
-.top img{height:78px} .top span{color:var(--gold);font-family:Montserrat;font-weight:700;font-size:26px;letter-spacing:2px}
+.top img{height:78px} .top span{color:var(--gold);font-family:Rubik;font-weight:700;font-size:26px;letter-spacing:2px}
 .area{position:absolute;top:120px;bottom:150px;left:0;right:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 90px}
 .area h1{font-size:76px;font-weight:800;line-height:1.35} .area p{font-size:34px;color:var(--gold);font-weight:700;margin-top:24px}
 .area .rule{width:120px;height:6px;background:var(--gold);margin:34px 0 0}
@@ -84,7 +84,7 @@ const post = `<!doctype html><html dir="rtl">${base}<style>body{width:1080px;hei
 <div class="bot"><div class="g"></div><span>${INFO.addrAr}</span><b>•</b><span class="en ltr">${INFO.phoneIntl}</span></div></body></html>`;
 
 // ---------- Email signature (portable HTML, inline styles, absolute logo URL to be set by user) ----------
-const sig = `<table dir="rtl" cellpadding="0" cellspacing="0" style="font-family:Arial,Tahoma,sans-serif;color:${NAVY};font-size:13px;line-height:1.6">
+const sig = `<table dir="rtl" cellpadding="0" cellspacing="0" style="font-family:Rubik,Arial,Tahoma,sans-serif;color:${NAVY};font-size:13px;line-height:1.6">
 <tr><td style="padding-left:16px;border-left:3px solid ${GOLD};vertical-align:middle"><img src="benefit-icon.png" width="78" height="78" alt="Benefit" style="display:block"></td>
 <td style="padding-right:4px;vertical-align:middle">
 <div style="font-size:16px;font-weight:bold">[اسم الموظف]</div>
@@ -127,9 +127,9 @@ ${gpage(3,'صيغ الشعار','LOGO VERSIONS',`<div class="grid g2"><div><div 
 <div class="grid g2" style="gap:5mm"><div><div class="box" style="height:58mm"><img src="${A('benefit-icon.png')}" style="height:44mm"></div><div class="cap">الرمز منفرداً</div></div><div><div class="box dk" style="height:58mm"><img src="${A('benefit-icon-white.png')}" style="height:44mm"></div><div class="cap">الرمز على الكحلي</div></div></div></div>`)}
 ${gpage(4,'الألوان','BRAND COLOURS',`<div class="grid g2" style="margin-top:6mm">${sw('الكحلي — Benefit Navy', NAVY, '11 · 42 · 74', '85 · 43 · 0 · 71')}${sw('الذهبي — Benefit Gold', GOLD, '201 · 161 · 74', '0 · 20 · 63 · 21')}</div>
 <p style="margin-top:12mm">الهوية مبنية على <b>لونين فقط</b>. يُستخدم الأبيض كمساحة خلفية. لا تُضاف ألوان أخرى إلى الشعار، ولا يوضع الشعار الملوّن على خلفيات مزدحمة. قيم <span class="en">CMYK</span> تقريبية؛ يُنصح بأخذ بروفة لونية من المطبعة قبل الطباعة النهائية.</p>`)}
-${gpage(5,'الخطوط','TYPOGRAPHY',`<div class="grid g2"><div class="ty"><div class="s">بنفيت للسفر</div><div class="m"><b>Cairo</b> — الخط العربي للهوية (العناوين والنصوص التسويقية).<br>الأوزان: <span class="en">Regular · Bold · ExtraBold</span></div></div>
-<div class="ty" dir="ltr"><div class="s en">BENEFIT</div><div class="m en" style="font-family:Montserrat"><b>Montserrat</b> — Latin typeface for the wordmark &amp; English headings.<br>Weights: Medium · SemiBold · Bold · ExtraBold</div></div></div>
-<p style="margin-top:8mm">في مستندات <b>Word</b> والمراسلات اليومية يُستخدم خط <b class="en">Arial</b> لضمان ظهور النص بشكل سليم على أي جهاز. الخطّان مجانيان من <span class="en">Google Fonts</span>.</p>`)}
+${gpage(5,'الخطوط','TYPOGRAPHY',`<div class="grid g2"><div class="ty"><div class="s">بنفيت للسفر</div><div class="m"><b class="en">Rubik</b> — الخط الموحّد للهوية بالعربية والإنجليزية: زوايا منحنية ناعمة، غير حادة، وواضح في الطباعة والشاشات.<br>الأوزان: <span class="en">Regular · Medium · SemiBold · Bold · ExtraBold</span></div></div>
+<div class="ty" dir="ltr"><div class="s en">BENEFIT</div><div class="m en"><b>Rubik</b> — one family for Arabic &amp; Latin: softly rounded corners, friendly yet professional.<br>Weights: Regular · Medium · SemiBold · Bold · ExtraBold</div></div></div>
+<p style="margin-top:8mm">الخط مُضمَّن داخل قالب <b>Word</b>، ومتاح مجاناً من <span class="en">Google Fonts</span>؛ يُنصح بتثبيته على أجهزة الموظفين لضمان التطابق التام.</p>`)}
 ${gpage(6,'قواعد الاستخدام','USAGE RULES',`<div class="grid g2"><div><h3>مساحة الأمان والحد الأدنى</h3><p>تُترك حول الشعار مساحة فارغة لا تقل عن ارتفاع الجزء العلوي من حرف <span class="en">B</span> من كل الجهات.<br>أقل عرض للشعار الأفقي: <b class="en">35mm</b> طباعةً / <b class="en">140px</b> شاشةً.<br>أقل عرض للرمز منفرداً: <b class="en">10mm</b> / <b class="en">32px</b>.</p></div>
 <div><h3>ممنوعات</h3><ul class="do"><li>تغيير ألوان الشعار أو إضافة ألوان جديدة.</li><li>تمديد الشعار أو ضغطه أو تدويره.</li><li>إضافة ظلال أو تدرجات أو حدود.</li><li>إلغاء الفراغ بين مسار الطائرة والحرف.</li><li>وضع الشعار الملوّن على صور أو خلفيات مزدحمة.</li><li>إعادة كتابة الاسم بخط مختلف.</li></ul></div></div>`)}
 ${gpage(7,'الختم الرسمي','COMPANY STAMP',`<div class="grid g3" style="align-items:center"><div><div class="box" style="height:110mm"><img src="${A('benefit-stamp-navy.png')}" style="height:96mm"></div><div class="cap">نسخة الحبر الواحد — للختم المطاطي / الذاتي التحبير</div></div>

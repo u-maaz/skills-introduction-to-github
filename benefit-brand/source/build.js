@@ -3,7 +3,7 @@ const d = require('docx');
 const { Document, Packer, Paragraph, TextRun, ImageRun, Header, Footer, Table, TableRow, TableCell,
   WidthType, AlignmentType, BorderStyle, ShadingType, VerticalAlign, PageNumber, TableLayoutType } = d;
 const NAVY = '0B2A4A', GOLD = 'C9A14A', WHITE = 'FFFFFF';
-const AR = { ascii: 'Arial', hAnsi: 'Arial', cs: 'Arial', eastAsia: 'Arial' };
+const AR = { ascii: 'Rubik', hAnsi: 'Rubik', cs: 'Rubik', eastAsia: 'Rubik' };
 const LOGO = fs.readFileSync(process.argv[2]);
 const NONE = { style: BorderStyle.NONE, size: 0, color: 'FFFFFF' };
 const noBorders = { top: NONE, bottom: NONE, left: NONE, right: NONE, insideHorizontal: NONE, insideVertical: NONE };
@@ -41,14 +41,16 @@ const header = new Header({ children: [
 const fcol = (label, lines, w) => new TableCell({ width: { size: w, type: WidthType.DXA }, borders: noBorders,
   margins: { top: 40, bottom: 40, left: 80, right: 80 },
   children: [ P([r(label, { bold: true, size: 15, color: GOLD })], { alignment: AlignmentType.CENTER }),
-    ...lines.map(l => P(Array.isArray(l) ? [r(l[0], { size: 15, bold: true }), en(l[1], { size: 15 })] : [r(l, { size: 15 })], { alignment: AlignmentType.CENTER })) ] });
+    ...lines.map(l => Array.isArray(l) && !l[0]
+      ? new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 0, line: 264 }, children: [en(l[1], { size: 15 })] })
+      : P(Array.isArray(l) ? [r(l[0], { size: 15, bold: true }), en(l[1], { size: 15 })] : [r(l, { size: 15 })], { alignment: AlignmentType.CENTER })) ] });
 const fw = [3302, 3302, 3302];
 const footer = new Footer({ children: [
   new Paragraph({ spacing: { before: 0, after: 0, line: 40, lineRule: 'exact' }, border: { top: { style: BorderStyle.SINGLE, size: 6, color: GOLD, space: 1 } }, children: [] }),
   new Table({ width: { size: W, type: WidthType.DXA }, columnWidths: fw, borders: noBorders, visuallyRightToLeft: true, layout: TableLayoutType.FIXED,
     rows: [ new TableRow({ children: [
       fcol('العنوان', ['الخرطوم – العمارات', ['', 'Al-Amarat, Khartoum, Sudan']], fw[0]),
-      fcol('التواصل', [['هاتف: ', '+249 912 337 952'], ['', '0912337952']], fw[1]),
+      fcol('التواصل', [['', '+249 912 337 952'], ['', '0912337952']], fw[1]),
       fcol('السجل التجاري', [['', '1176591'], ['', 'C.R. No. 1176591']], fw[2]),
     ]})] }),
   new Paragraph({ bidirectional: true, alignment: AlignmentType.CENTER, spacing: { before: 100, after: 0 },
@@ -82,7 +84,7 @@ const body = [
 
 const doc = new Document({
   creator: 'Benefit Travel & Aviation', title: 'Benefit Letterhead',
-  styles: { default: { document: { run: { font: AR, size: 22, color: NAVY, rightToLeft: true }, paragraph: { bidirectional: true } } } },
+  styles: { default: { document: { run: { font: AR, size: 22, color: NAVY } } } },
   sections: [{ properties: { page: { size: { width: 11906, height: 16838 }, margin: { top: 2150, bottom: 1900, left: 1000, right: 1000, header: 450, footer: 380 } } },
     headers: { default: header }, footers: { default: footer }, children: body }],
 });

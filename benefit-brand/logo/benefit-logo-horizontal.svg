@@ -11,8 +11,8 @@
   </g>
   <path d="M18,146 Q92,206 160,70 Q96,186 18,146 Z" fill="#C9A14A"/>
   <path d="M15,0 C15,-2 12,-2.6 10,-2.6 L3,-2.6 L-5,-14 L-9.5,-14 L-4.5,-2.6 L-11,-2.6 L-14.5,-7.5 L-17.5,-7.5 L-15.5,0 L-17.5,7.5 L-14.5,7.5 L-11,2.6 L-4.5,2.6 L-9.5,14 L-5,14 L3,2.6 L10,2.6 C12,2.6 15,2 15,0 Z" fill="#C9A14A" transform="translate(171,49) rotate(-58) scale(1.15)"/></g>
- <text x="214" y="112" font-family="Montserrat, Arial, sans-serif" font-weight="800" font-size="74" letter-spacing="6" fill="#0B2A4A">BENEFIT</text>
+ <text x="214" y="112" font-family="Rubik, Arial, sans-serif" font-weight="800" font-size="74" letter-spacing="6" fill="#0B2A4A">BENEFIT</text>
  <rect x="217" y="128" width="64" height="4" fill="#C9A14A"/>
- <text x="294" y="137" font-family="Montserrat, Arial, sans-serif" font-weight="600" font-size="17.5" letter-spacing="5.2" fill="#C9A14A">TRAVEL &amp; AVIATION</text>
- <text x="214" y="182" font-family="Cairo, Arial, sans-serif" font-weight="700" font-size="30" fill="#0B2A4A" direction="ltr">بنفيت للسفر والطيران</text>
+ <text x="294" y="137" font-family="Rubik, Arial, sans-serif" font-weight="600" font-size="17.5" letter-spacing="5.2" fill="#C9A14A">TRAVEL &amp; AVIATION</text>
+ <text x="214" y="182" font-family="Rubik, Arial, sans-serif" font-weight="700" font-size="30" fill="#0B2A4A" direction="ltr">بنفيت للسفر والطيران</text>
 </svg>
