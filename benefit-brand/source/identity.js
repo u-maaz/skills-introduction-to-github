@@ -37,7 +37,7 @@ const card = `<!doctype html><html dir="rtl">${base}<style>
   <div class="row"><i>${ico.phone('#fff')}</i><span class="ltr en">${INFO.phoneIntl}</span></div>
   <div class="row"><i>${ico.pin('#fff')}</i><span>${INFO.addrAr}<small class="ltr">${INFO.addrEn}</small></span></div>
   <div class="row"><i>${ico.doc('#fff')}</i><span>سجل تجاري: <span class="en">${INFO.cr}</span></span></div>
-  <div class="foot">بنفيت للسفر والطيران <b>•</b> <span class="en" style="letter-spacing:.6mm">BENEFIT TRAVEL &amp; AVIATION</span></div>
+  <div class="foot">بنفت للسفر والطيران <b>•</b> <span class="en" style="letter-spacing:.6mm">BENEFIT TRAVEL &amp; AVIATION</span></div>
 </div></body></html>`;
 
 // ---------- DL envelope 220x110mm ----------
@@ -88,7 +88,7 @@ const sig = `<table dir="rtl" cellpadding="0" cellspacing="0" style="font-family
 <tr><td style="padding-left:16px;border-left:3px solid ${GOLD};vertical-align:middle"><img src="benefit-icon.png" width="78" height="78" alt="Benefit" style="display:block"></td>
 <td style="padding-right:4px;vertical-align:middle">
 <div style="font-size:16px;font-weight:bold">[اسم الموظف]</div>
-<div style="color:${GOLD};font-weight:bold">[المسمى الوظيفي] — بنفيت للسفر والطيران</div>
+<div style="color:${GOLD};font-weight:bold">[المسمى الوظيفي] — بنفت للسفر والطيران</div>
 <div>هاتف: <span dir="ltr">${INFO.phoneIntl}</span></div>
 <div>${INFO.addrAr}</div>
 <div style="font-size:11px">سجل تجاري: ${INFO.cr}</div></td></tr></table>`;
@@ -96,7 +96,7 @@ const sigPage = `<!doctype html>${base}<body style="padding:30px;background:#fff
 
 // ---------- Brand guidelines (A4 landscape) ----------
 const sw = (name, hex, rgb, cmyk, dark) => `<div class="sw"><div class="chip" style="background:${hex}"></div><div class="sl"><b>${name}</b><span class="en">HEX ${hex}</span><span class="en">RGB ${rgb}</span><span class="en">CMYK ${cmyk}</span></div></div>`;
-const gpage = (n, title, enTitle, body) => `<section class="pg"><header><div><h2>${title}</h2><span class="en">${enTitle}</span></div><img src="${A('benefit-logo-header.png')}"></header><div class="bd">${body}</div><footer><span>بنفيت للسفر والطيران — دليل الهوية البصرية</span><span class="en">${String(n).padStart(2,'0')}</span></footer></section>`;
+const gpage = (n, title, enTitle, body) => `<section class="pg"><header><div><h2>${title}</h2><span class="en">${enTitle}</span></div><img src="${A('benefit-logo-header.png')}"></header><div class="bd">${body}</div><footer><span>بنفت للسفر والطيران — دليل الهوية البصرية</span><span class="en">${String(n).padStart(2,'0')}</span></footer></section>`;
 const guide = `<!doctype html><html dir="rtl">${base}<style>
 @page{size:297mm 210mm;margin:0} .pg{width:297mm;height:210mm;position:relative;overflow:hidden;page-break-after:always;padding:16mm 18mm}
 header{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:.6mm solid var(--navy);padding-bottom:4mm;position:relative}
@@ -118,7 +118,7 @@ footer{position:absolute;bottom:9mm;left:18mm;right:18mm;display:flex;justify-co
 </style><body>
 <section class="pg cover"><img class="wm" src="${A('benefit-icon-white.png')}"><img src="${A('benefit-logo-stacked-white.png')}"><h1>دليل الهوية البصرية</h1><div class="en">BRAND IDENTITY GUIDELINES</div><div class="bar"></div></section>
 ${gpage(2,'فكرة الشعار','LOGO CONCEPT',`<div class="grid g2" style="align-items:center"><div class="box" style="height:130mm"><img src="${A('benefit-icon.png')}" style="height:110mm"></div>
-<div><h3>حرف <span class="gold">B</span> ومسار الرحلة</h3><p>يقوم الشعار على الحرف الأول من اسم <b>بنفيت (Benefit)</b> مرسوماً بخطوط هندسية متينة تعبّر عن الثقة والاستقرار، يعبره مسار طيران ذهبي ينتهي بطائرة في وضع الإقلاع؛ في إشارة إلى الانطلاق والنمو والرحلة نحو الوجهة.</p><br>
+<div><h3>حرف <span class="gold">B</span> ومسار الرحلة</h3><p>يقوم الشعار على الحرف الأول من اسم <b>بنفت (Benefit)</b> مرسوماً بخطوط هندسية متينة تعبّر عن الثقة والاستقرار، يعبره مسار طيران ذهبي ينتهي بطائرة في وضع الإقلاع؛ في إشارة إلى الانطلاق والنمو والرحلة نحو الوجهة.</p><br>
 <p><b>الكحلي</b> لون الأفق والسماء ليلاً، يرمز إلى الاحترافية والأمان.<br><b class="gold">الذهبي</b> يرمز إلى القيمة والفخامة وجودة الخدمة.</p><br>
 <p>الفراغ الفاصل بين المسار والحرف جزء من التصميم ويجب الحفاظ عليه في جميع الاستخدامات.</p></div></div>`)}
 ${gpage(3,'صيغ الشعار','LOGO VERSIONS',`<div class="grid g2"><div><div class="box" style="height:58mm"><img src="${A('benefit-logo-horizontal.png')}" style="height:42mm"></div><div class="cap">الشعار الأفقي — الاستخدام الرئيسي</div></div>
@@ -127,7 +127,7 @@ ${gpage(3,'صيغ الشعار','LOGO VERSIONS',`<div class="grid g2"><div><div 
 <div class="grid g2" style="gap:5mm"><div><div class="box" style="height:58mm"><img src="${A('benefit-icon.png')}" style="height:44mm"></div><div class="cap">الرمز منفرداً</div></div><div><div class="box dk" style="height:58mm"><img src="${A('benefit-icon-white.png')}" style="height:44mm"></div><div class="cap">الرمز على الكحلي</div></div></div></div>`)}
 ${gpage(4,'الألوان','BRAND COLOURS',`<div class="grid g2" style="margin-top:6mm">${sw('الكحلي — Benefit Navy', NAVY, '11 · 42 · 74', '85 · 43 · 0 · 71')}${sw('الذهبي — Benefit Gold', GOLD, '201 · 161 · 74', '0 · 20 · 63 · 21')}</div>
 <p style="margin-top:12mm">الهوية مبنية على <b>لونين فقط</b>. يُستخدم الأبيض كمساحة خلفية. لا تُضاف ألوان أخرى إلى الشعار، ولا يوضع الشعار الملوّن على خلفيات مزدحمة. قيم <span class="en">CMYK</span> تقريبية؛ يُنصح بأخذ بروفة لونية من المطبعة قبل الطباعة النهائية.</p>`)}
-${gpage(5,'الخطوط','TYPOGRAPHY',`<div class="grid g2"><div class="ty"><div class="s">بنفيت للسفر</div><div class="m"><b class="en">Rubik</b> — الخط الموحّد للهوية بالعربية والإنجليزية: زوايا منحنية ناعمة، غير حادة، وواضح في الطباعة والشاشات.<br>الأوزان: <span class="en">Regular · Medium · SemiBold · Bold · ExtraBold</span></div></div>
+${gpage(5,'الخطوط','TYPOGRAPHY',`<div class="grid g2"><div class="ty"><div class="s">بنفت للسفر</div><div class="m"><b class="en">Rubik</b> — الخط الموحّد للهوية بالعربية والإنجليزية: زوايا منحنية ناعمة، غير حادة، وواضح في الطباعة والشاشات.<br>الأوزان: <span class="en">Regular · Medium · SemiBold · Bold · ExtraBold</span></div></div>
 <div class="ty" dir="ltr"><div class="s en">BENEFIT</div><div class="m en"><b>Rubik</b> — one family for Arabic &amp; Latin: softly rounded corners, friendly yet professional.<br>Weights: Regular · Medium · SemiBold · Bold · ExtraBold</div></div></div>
 <p style="margin-top:8mm">الخط مُضمَّن داخل قالب <b>Word</b>، ومتاح مجاناً من <span class="en">Google Fonts</span>؛ يُنصح بتثبيته على أجهزة الموظفين لضمان التطابق التام.</p>`)}
 ${gpage(6,'قواعد الاستخدام','USAGE RULES',`<div class="grid g2"><div><h3>مساحة الأمان والحد الأدنى</h3><p>تُترك حول الشعار مساحة فارغة لا تقل عن ارتفاع الجزء العلوي من حرف <span class="en">B</span> من كل الجهات.<br>أقل عرض للشعار الأفقي: <b class="en">35mm</b> طباعةً / <b class="en">140px</b> شاشةً.<br>أقل عرض للرمز منفرداً: <b class="en">10mm</b> / <b class="en">32px</b>.</p></div>
@@ -142,7 +142,7 @@ ${gpage(8,'القرطاسية','STATIONERY',`<div class="grid g3"><div><div clas
 <div><div class="mock" style="height:52mm"><img src="${A('social-avatar.png')}"></div><div class="cap">الصورة الشخصية للحسابات</div></div>
 <div><div class="mock" style="height:52mm"><img src="${A('social-post.png')}"></div><div class="cap">قالب منشور</div></div></div>`)}
 ${gpage(9,'بيانات الشركة','COMPANY DETAILS',`<div class="grid g2" style="align-items:center"><div style="font-size:14pt;line-height:2.4">
-<div><b>الاسم:</b> بنفيت للسفر والطيران</div><div><b class="gold">Name:</b> <span class="en">Benefit Travel &amp; Aviation</span></div>
+<div><b>الاسم:</b> بنفت للسفر والطيران</div><div><b class="gold">Name:</b> <span class="en">Benefit Travel &amp; Aviation</span></div>
 <div><b>الهاتف:</b> <span class="en ltr">${INFO.phoneIntl}</span> &nbsp;|&nbsp; <span class="en ltr">${INFO.phoneLocal}</span></div><div><b>العنوان:</b> ${INFO.addrAr}</div><div><b>السجل التجاري:</b> <span class="en">${INFO.cr}</span></div></div>
 <div class="box" style="height:110mm"><img src="${A('benefit-stamp-brand.png')}" style="height:90mm"></div></div>`)}
 </body></html>`;

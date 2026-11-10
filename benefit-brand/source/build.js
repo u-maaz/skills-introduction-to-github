@@ -20,7 +20,7 @@ const header = new Header({ children: [
     visuallyRightToLeft: true, layout: TableLayoutType.FIXED,
     rows: [new TableRow({ children: [
       new TableCell({ width: { size: 5106, type: WidthType.DXA }, borders: noBorders, verticalAlign: VerticalAlign.CENTER, children: [
-        P([r('بنفيت للسفر والطيران', { bold: true, size: 32 })]),
+        P([r('بنفت للسفر والطيران', { bold: true, size: 32 })]),
         P([en('BENEFIT TRAVEL & AVIATION CO.', { size: 16, bold: true, characterSpacing: 30, color: GOLD })], { bidirectional: false, alignment: AlignmentType.RIGHT, spacing: { before: 80, after: 60 } }),
         P([r('سجل تجاري: ', { size: 16, bold: true }), en('1176591', { size: 16 }),
            r('   |   ', { size: 16, color: GOLD }),
@@ -56,7 +56,7 @@ const footer = new Footer({ children: [
   new Paragraph({ bidirectional: true, alignment: AlignmentType.CENTER, spacing: { before: 100, after: 0 },
     shading: { type: ShadingType.CLEAR, fill: NAVY, color: 'auto' },
     border: { top: { style: BorderStyle.SINGLE, size: 4, color: NAVY, space: 3 }, bottom: { style: BorderStyle.SINGLE, size: 4, color: NAVY, space: 3 } },
-    children: [ r('بنفيت للسفر والطيران', { color: WHITE, bold: true, size: 15 }), r('   •   ', { color: GOLD, size: 15 }),
+    children: [ r('بنفت للسفر والطيران', { color: WHITE, bold: true, size: 15 }), r('   •   ', { color: GOLD, size: 15 }),
       r('صفحة ', { color: WHITE, size: 15 }), new TextRun({ children: [PageNumber.CURRENT], color: WHITE, size: 15, font: AR, bold: true }),
       r(' من ', { color: WHITE, size: 15 }), new TextRun({ children: [PageNumber.TOTAL_PAGES], color: WHITE, size: 15, font: AR, bold: true }),
       r('   •   ', { color: GOLD, size: 15 }), new TextRun({ text: 'BENEFIT TRAVEL & AVIATION', color: WHITE, size: 14, font: AR, characterSpacing: 20 }) ] }),
@@ -74,7 +74,7 @@ const body = [
   P([r('السادة / [اسم الجهة]                                                                المحترمين', { bold: true, size: 24 })], { spacing: { after: 120 } }),
   P([r('السلام عليكم ورحمة الله وبركاته،', { size: 22 })], { spacing: { after: 200 } }),
   P([r('الموضوع: ', { bold: true, size: 24, color: GOLD }), r('[اكتب موضوع الخطاب هنا]', { bold: true, size: 24 })], { alignment: AlignmentType.CENTER, spacing: { after: 240 } }),
-  P([r('[نص الخطاب: تتشرف شركة بنفيت للسفر والطيران بأن تتقدم إليكم بخالص التحية والتقدير، وتود أن تحيطكم علمًا بـ ... اكتب هنا محتوى الخطاب بشكل واضح ومختصر، مع ذكر التفاصيل والمواعيد والمرجعيات ذات العلاقة.]', { size: 22 })], { alignment: AlignmentType.BOTH, spacing: { after: 200, line: 360 } }),
+  P([r('[نص الخطاب: تتشرف شركة بنفت للسفر والطيران بأن تتقدم إليكم بخالص التحية والتقدير، وتود أن تحيطكم علمًا بـ ... اكتب هنا محتوى الخطاب بشكل واضح ومختصر، مع ذكر التفاصيل والمواعيد والمرجعيات ذات العلاقة.]', { size: 22 })], { alignment: AlignmentType.BOTH, spacing: { after: 200, line: 360 } }),
   P([r('[فقرة إضافية عند الحاجة.]', { size: 22 })], { alignment: AlignmentType.BOTH, spacing: { after: 200, line: 360 } }),
   P([r('وتفضلوا بقبول فائق الاحترام والتقدير،', { size: 22 })], { spacing: { before: 120, after: 600 } }),
   P([r('[الاسم]', { bold: true, size: 22 })], { alignment: AlignmentType.END }),

@@ -11,7 +11,7 @@ function stamp(id, ink = NAVY, accent = ink) {
   <circle cx="200" cy="200" r="181" fill="none" stroke="${ink}" stroke-width="1.6"/>
   <circle cx="200" cy="200" r="124" fill="none" stroke="${ink}" stroke-width="1.6"/>
   <circle cx="200" cy="200" r="118" fill="none" stroke="${accent}" stroke-width="3.5" stroke-dasharray="1 7" stroke-linecap="round"/>
-  <text font-family="Rubik" font-weight="800" font-size="30" fill="${ink}"><textPath href="#top${id}" startOffset="50%" text-anchor="middle">بنفيت للسفر والطيران</textPath></text>
+  <text font-family="Rubik" font-weight="800" font-size="30" fill="${ink}"><textPath href="#top${id}" startOffset="50%" text-anchor="middle">بنفت للسفر والطيران</textPath></text>
   <text font-family="Rubik" font-weight="700" font-size="18.5" letter-spacing="3.2" fill="${ink}"><textPath href="#bot${id}" startOffset="50%" text-anchor="middle">BENEFIT TRAVEL &amp; AVIATION</textPath></text>
   ${star(36, 200)}${star(364, 200)}
   <g transform="translate(142,104) scale(0.58)">${mark('st' + id, ink, accent)}</g>
