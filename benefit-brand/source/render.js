@@ -10,16 +10,16 @@ const horiz = (n=NAVY,g=GOLD)=>`<svg xmlns="http://www.w3.org/2000/svg" viewBox=
  <g>${mark('h',n,g)}</g>
  <text x="214" y="112" font-family="Rubik, Arial, sans-serif" font-weight="800" font-size="74" letter-spacing="6" fill="${n}">BENEFIT</text>
  <rect x="217" y="128" width="64" height="4" fill="${g}"/>
- <text x="294" y="137" font-family="Rubik, Arial, sans-serif" font-weight="600" font-size="17.5" letter-spacing="5.2" fill="${g}">TRAVEL &amp; AVIATION</text>
- <text x="214" y="182" font-family="Rubik, Arial, sans-serif" font-weight="700" font-size="30" fill="${n}" direction="ltr">بنفت للسفر والطيران</text>
+ <text x="294" y="137" font-family="Rubik, Arial, sans-serif" font-weight="600" font-size="17.5" letter-spacing="5.2" fill="${g}">TRAVEL &amp; TOURISM</text>
+ <text x="214" y="182" font-family="Rubik, Arial, sans-serif" font-weight="700" font-size="30" fill="${n}" direction="ltr">بنفت للسفر والسياحة</text>
 </svg>`;
 // stacked lockup
 const stacked = (n=NAVY,g=GOLD)=>`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 400" width="1320" height="1200">
  <g transform="translate(120,0)">${mark('s',n,g)}</g>
  <text x="220" y="262" text-anchor="middle" font-family="Rubik, Arial, sans-serif" font-weight="800" font-size="62" letter-spacing="6" fill="${n}">BENEFIT</text>
- <text x="220" y="296" text-anchor="middle" font-family="Rubik, Arial, sans-serif" font-weight="600" font-size="16" letter-spacing="6" fill="${g}">TRAVEL &amp; AVIATION</text>
+ <text x="220" y="296" text-anchor="middle" font-family="Rubik, Arial, sans-serif" font-weight="600" font-size="16" letter-spacing="6" fill="${g}">TRAVEL &amp; TOURISM</text>
  <rect x="190" y="314" width="60" height="3" fill="${g}"/>
- <text x="220" y="362" text-anchor="middle" font-family="Rubik, Arial, sans-serif" font-weight="700" font-size="34" fill="${n}">بنفت للسفر والطيران</text>
+ <text x="220" y="362" text-anchor="middle" font-family="Rubik, Arial, sans-serif" font-weight="700" font-size="34" fill="${n}">بنفت للسفر والسياحة</text>
 </svg>`;
 (async()=>{
   const b = await chromium.launch(); const p = await b.newPage();

@@ -37,7 +37,7 @@ const card = `<!doctype html><html dir="rtl">${base}<style>
   <div class="row"><i>${ico.phone('#fff')}</i><span class="ltr en">${INFO.phoneIntl}</span></div>
   <div class="row"><i>${ico.pin('#fff')}</i><span>${INFO.addrAr}<small class="ltr">${INFO.addrEn}</small></span></div>
   <div class="row"><i>${ico.doc('#fff')}</i><span>سجل تجاري: <span class="en">${INFO.cr}</span></span></div>
-  <div class="foot">بنفت للسفر والطيران <b>•</b> <span class="en" style="letter-spacing:.6mm">BENEFIT TRAVEL &amp; AVIATION</span></div>
+  <div class="foot">بنفت للسفر والسياحة <b>•</b> <span class="en" style="letter-spacing:.6mm">BENEFIT TRAVEL &amp; TOURISM</span></div>
 </div></body></html>`;
 
 // ---------- DL envelope 220x110mm ----------
@@ -88,7 +88,7 @@ const sig = `<table dir="rtl" cellpadding="0" cellspacing="0" style="font-family
 <tr><td style="padding-left:16px;border-left:3px solid ${GOLD};vertical-align:middle"><img src="benefit-icon.png" width="78" height="78" alt="Benefit" style="display:block"></td>
 <td style="padding-right:4px;vertical-align:middle">
 <div style="font-size:16px;font-weight:bold">[اسم الموظف]</div>
-<div style="color:${GOLD};font-weight:bold">[المسمى الوظيفي] — بنفت للسفر والطيران</div>
+<div style="color:${GOLD};font-weight:bold">[المسمى الوظيفي] — بنفت للسفر والسياحة</div>
 <div>هاتف: <span dir="ltr">${INFO.phoneIntl}</span></div>
 <div>${INFO.addrAr}</div>
 <div style="font-size:11px">سجل تجاري: ${INFO.cr}</div></td></tr></table>`;
@@ -96,7 +96,7 @@ const sigPage = `<!doctype html>${base}<body style="padding:30px;background:#fff
 
 // ---------- Brand guidelines (A4 landscape) ----------
 const sw = (name, hex, rgb, cmyk, dark) => `<div class="sw"><div class="chip" style="background:${hex}"></div><div class="sl"><b>${name}</b><span class="en">HEX ${hex}</span><span class="en">RGB ${rgb}</span><span class="en">CMYK ${cmyk}</span></div></div>`;
-const gpage = (n, title, enTitle, body) => `<section class="pg"><header><div><h2>${title}</h2><span class="en">${enTitle}</span></div><img src="${A('benefit-logo-header.png')}"></header><div class="bd">${body}</div><footer><span>بنفت للسفر والطيران — دليل الهوية البصرية</span><span class="en">${String(n).padStart(2,'0')}</span></footer></section>`;
+const gpage = (n, title, enTitle, body) => `<section class="pg"><header><div><h2>${title}</h2><span class="en">${enTitle}</span></div><img src="${A('benefit-logo-header.png')}"></header><div class="bd">${body}</div><footer><span>بنفت للسفر والسياحة — دليل الهوية البصرية</span><span class="en">${String(n).padStart(2,'0')}</span></footer></section>`;
 const guide = `<!doctype html><html dir="rtl">${base}<style>
 @page{size:297mm 210mm;margin:0} .pg{width:297mm;height:210mm;position:relative;overflow:hidden;page-break-after:always;padding:16mm 18mm}
 header{display:flex;justify-content:space-between;align-items:flex-end;border-bottom:.6mm solid var(--navy);padding-bottom:4mm;position:relative}
@@ -142,7 +142,7 @@ ${gpage(8,'القرطاسية','STATIONERY',`<div class="grid g3"><div><div clas
 <div><div class="mock" style="height:52mm"><img src="${A('social-avatar.png')}"></div><div class="cap">الصورة الشخصية للحسابات</div></div>
 <div><div class="mock" style="height:52mm"><img src="${A('social-post.png')}"></div><div class="cap">قالب منشور</div></div></div>`)}
 ${gpage(9,'بيانات الشركة','COMPANY DETAILS',`<div class="grid g2" style="align-items:center"><div style="font-size:14pt;line-height:2.4">
-<div><b>الاسم:</b> بنفت للسفر والطيران</div><div><b class="gold">Name:</b> <span class="en">Benefit Travel &amp; Aviation</span></div>
+<div><b>الاسم:</b> بنفت للسفر والسياحة</div><div><b class="gold">Name:</b> <span class="en">Benefit Travel &amp; Tourism</span></div>
 <div><b>الهاتف:</b> <span class="en ltr">${INFO.phoneIntl}</span> &nbsp;|&nbsp; <span class="en ltr">${INFO.phoneLocal}</span></div><div><b>العنوان:</b> ${INFO.addrAr}</div><div><b>السجل التجاري:</b> <span class="en">${INFO.cr}</span></div></div>
 <div class="box" style="height:110mm"><img src="${A('benefit-stamp-brand.png')}" style="height:90mm"></div></div>`)}
 </body></html>`;

@@ -7,8 +7,8 @@
   <circle cx="200" cy="200" r="181" fill="none" stroke="#0B2A4A" stroke-width="1.6"/>
   <circle cx="200" cy="200" r="124" fill="none" stroke="#0B2A4A" stroke-width="1.6"/>
   <circle cx="200" cy="200" r="118" fill="none" stroke="#0B2A4A" stroke-width="3.5" stroke-dasharray="1 7" stroke-linecap="round"/>
-  <text font-family="Rubik" font-weight="800" font-size="30" fill="#0B2A4A"><textPath href="#topa" startOffset="50%" text-anchor="middle">بنفت للسفر والطيران</textPath></text>
-  <text font-family="Rubik" font-weight="700" font-size="18.5" letter-spacing="3.2" fill="#0B2A4A"><textPath href="#bota" startOffset="50%" text-anchor="middle">BENEFIT TRAVEL &amp; AVIATION</textPath></text>
+  <text font-family="Rubik" font-weight="800" font-size="30" fill="#0B2A4A"><textPath href="#topa" startOffset="50%" text-anchor="middle">بنفت للسفر والسياحة</textPath></text>
+  <text font-family="Rubik" font-weight="700" font-size="18.5" letter-spacing="3.2" fill="#0B2A4A"><textPath href="#bota" startOffset="50%" text-anchor="middle">BENEFIT TRAVEL &amp; TOURISM</textPath></text>
   <path d="M36,193 L38,198 L43,200 L38,202 L36,207 L34,202 L29,200 L34,198 Z" fill="#0B2A4A"/><path d="M364,193 L366,198 L371,200 L366,202 L364,207 L362,202 L357,200 L362,198 Z" fill="#0B2A4A"/>
   <g transform="translate(142,104) scale(0.58)">
   <defs><mask id="msta" maskUnits="userSpaceOnUse" x="0" y="0" width="200" height="200">
