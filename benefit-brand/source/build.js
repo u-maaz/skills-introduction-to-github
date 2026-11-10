@@ -1,7 +1,7 @@
 const fs = require('fs');
 const d = require('docx');
 const { Document, Packer, Paragraph, TextRun, ImageRun, Header, Footer, Table, TableRow, TableCell,
-  WidthType, AlignmentType, BorderStyle, ShadingType, VerticalAlign, PageNumber, TableLayoutType } = d;
+  PageOrientation, WidthType, AlignmentType, BorderStyle, ShadingType, VerticalAlign, PageNumber, TableLayoutType } = d;
 const NAVY = '0B2A4A', GOLD = 'C9A14A', WHITE = 'FFFFFF';
 const AR = { ascii: 'Rubik', hAnsi: 'Rubik', cs: 'Rubik', eastAsia: 'Rubik' };
 const LOGO = fs.readFileSync(process.argv[2]);
@@ -85,7 +85,7 @@ const body = [
 const doc = new Document({
   creator: 'Benefit Travel & Aviation', title: 'Benefit Letterhead',
   styles: { default: { document: { run: { font: AR, size: 22, color: NAVY } } } },
-  sections: [{ properties: { page: { size: { width: 11906, height: 16838 }, margin: { top: 2150, bottom: 1900, left: 1000, right: 1000, header: 450, footer: 380 } } },
-    headers: { default: header }, footers: { default: footer }, children: body }],
+  sections: [{ properties: { page: { size: { width: 11906, height: 16838, orientation: PageOrientation.PORTRAIT }, margin: { top: 2150, bottom: 1900, left: 1000, right: 1000, header: 450, footer: 380 } } },
+    headers: { default: header }, footers: { default: footer }, children: process.argv[4] === 'blank' ? [P([r('')])] : body }],
 });
 Packer.toBuffer(doc).then(b => fs.writeFileSync(process.argv[3], b));
